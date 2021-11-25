@@ -1,0 +1,68 @@
+.react-responsive-modal-root {
+  z-index: 100000 !important;
+}
+
+/* .customOverlay {
+   background: rgba(36, 123, 160, 0.7); 
+} */
+.modalheader {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 1rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+.modalbody {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 1rem;
+}
+.modalfooter {
+  text-align: right;
+  width: 100%;
+  padding: 0 0 1rem 1rem;
+}
+.modalcancelbtn {
+  width: 89.95px !important;
+  height: 32px !important;
+}
+.modalproceedbtn {
+  width: 40% !important;
+  height: 32px !important;
+  margin-right: 0 !important;
+}
+.favModal {
+  max-width: 500px;
+  width: 416px !important;
+  padding: 0 !important;
+  border-radius: 2px;
+}
+.viewmembers
+{
+  height: 88%;
+  overflow: hidden;
+  width: 100vh;
+}
+
+.editModal {
+  max-width: 500px;
+  float: right;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh;
+  width: 457px;
+}
+.deleteModal {
+  max-width: 500px;
+  width: 416px !important;
+  padding: 0 !important;
+  border-radius: 2px;
+}
+.divbottom {
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+}

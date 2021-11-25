@@ -1,0 +1,208 @@
+.btn-outline-danger_new {
+  color: #e8873b;
+  background-color: #fff;
+  border-color: #e8873b;
+}
+.btn-outline-danger_new:hover {
+  color: #fff;
+  background-color: #e8873b;
+  border-color: #e8873b;
+}
+.btncommon {
+  width: 10rem;
+  margin-right: 1rem;
+}
+.gridheader {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.gridrow {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.gridrowview {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #e8873b;
+  cursor: pointer;
+}
+.gridrowmore {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  cursor: pointer;
+}
+/* 
+.profileImage {
+  position: absolute;
+  font-family: "roboto-bold";
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #e8873b;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-left: 0rem;
+  line-height: 1.5rem;
+} */
+
+.profileImage{
+  display: block;
+  height: 27px;
+  width: 27px;
+  line-height: 26px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #e8873b;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+.favprofileImage {
+  margin-top: -2rem;
+  font-family: "roboto-bold";
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0.15rem solid #e8873b;
+  font-size: 2rem;
+  color: #e8873b;
+  text-align: center;
+  margin-left: 0rem;
+  line-height: 1.5rem;
+  cursor: default !important;
+}
+.favnameprofile {
+  margin-top: -2rem;
+  position: absolute;
+  font-family: "roboto-bold";
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: #e8873b;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-left: 0rem;
+  line-height: 1.5rem;
+}
+.cardheader {
+  padding: 0.5rem 1rem 0rem 1rem;
+}
+.cardfooter {
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.favname {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #2b3e5e;
+}
+.favmobile {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140.8%;
+  color: #2b3e5e;
+}
+.favdesignation {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 149.7%;
+  text-align: center;
+  color: #9198a5;
+}
+.favviewmore {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 149.7%;
+  color: #e8873b;
+  cursor: pointer;
+}
+.mousepointer {
+  cursor: pointer;
+}
+.col-sm-offset-1 {
+  margin-left: 2.33333333% !important;
+}
+.favcontactcard {
+  height: 270px;
+  width: 192px;
+}
+
+.popoverlist {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.ect {
+  cursor: pointer;
+}
+/**/
+.modal {
+  font-size: 12px;
+}
+.modal1 > .header {
+  width: 100%;
+  border-bottom: 2px solid #9198a5;
+  font-size: 18px;
+  text-align: left;
+  padding: 5px;
+  font-family: "roboto-bold";
+}
+.modal1 > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal1 > .footer {
+  width: 100%;
+  border-top: 2px solid #9198a5;
+  font-size: 18px;
+  text-align: right;
+  padding: 5px;
+  font-family: "roboto-bold";
+}
+.modal1 > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal1 > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}

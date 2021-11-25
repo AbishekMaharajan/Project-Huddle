@@ -1,0 +1,77 @@
+.headingimg {
+  margin-top: -0.1rem;
+  padding-right: 1rem;
+}
+.tableheader {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2b3e5e;
+}
+.membername {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 149.7%;
+  color: #2b3e5e;
+}
+.mobilenumber {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140.8%;
+  color: #2b3e5e;
+}
+.table thead th {
+  border: none !important;
+}
+.spanerror {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #e34568;
+  margin-left: 30px;
+}
+.participantscount {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #9198a5;
+}
+.muterecord {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140.8%;
+  color: #000000;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #e8873b;
+  background-color: #e8873b;
+}
+input#txtsearch {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  background-position: 10px 6px;
+  background-size: 1.2rem;
+  width: 328px;
+  height: 32px;
+  border: 1px solid #9198a5;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+input#txtsearch:focus {
+  background-image: none;
+  text-indent: 0px;
+}

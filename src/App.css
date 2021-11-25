@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kanit:200,300,400,500,600&display=swap");
+
+@font-face {
+  font-family: roboto-regular;
+  src: url(./Roboto/Roboto-Regular.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(./Roboto/Roboto-Bold.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-medium;
+  src: url(./Roboto/Roboto-Medium.ttf) format("opentype");
+}
+@font-face {
+  font-family: roboto-light;
+  src: url(./Roboto/Roboto-Light.ttf) format("opentype");
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.notifications-component {
+  left: 0;
+  top: 72px;
+}
+#profileImage {
+  font-family: "roboto-medium";
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #e8873b;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  line-height: 2rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9198a5;
+  opacity: 1; /* Firefox */
+  font-family: "roboto-medium";
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9198a5;
+  font-family: "roboto-medium";
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9198a5;
+  font-family: "roboto-medium";
+}

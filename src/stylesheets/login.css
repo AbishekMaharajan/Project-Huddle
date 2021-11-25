@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+  background: #fafafa;
+}
+
+body {
+  /* display: -ms-flexbox; */
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+.istudionavbar {
+  height: 72px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: #ffffff;
+  box-shadow: 1px 1px 19px 5px rgba(0, 0, 0, 0.05);
+}
+
+.signincontainer {
+  display: flex;
+  /* width: 461px; */
+  padding: 1rem;
+  height: 395px;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  color: white;
+}
+.signinheader {
+  font-family: Source Sans Pro !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  text-align: center;
+  display: inline-block;
+  color: #e8873b;
+  text-align: center;
+}
+input#txtempid {
+  background-image: url("../images/user.svg");
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  background-position: 10px 5px;
+  background-size: 1.5rem;
+  height: 40px;
+  width: 305px;
+
+  border-radius: 4px;
+}
+input#txtempid:focus {
+  background-image: none;
+  text-indent: 0px;
+}
+input#pass1 {
+  background-image: url("../images/lock.svg");
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  background-position: 10px 5px;
+  background-size: 1.5rem;
+  height: 40px;
+  width: 305px;
+
+  border-radius: 4px;
+}
+input#pass1:focus {
+  background-image: none;
+  text-indent: 0px;
+}
+.signinbtn {
+  height: 40px;
+  width: 305px;
+  background: #e8873b;
+  border: 1px solid #e8873b;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #e8873b;
+  border-color: #e8873b;
+}
