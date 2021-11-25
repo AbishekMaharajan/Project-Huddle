@@ -109,3 +109,11 @@
   cursor: default;
   background: transparent !important;
 }
+.loaderdiv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

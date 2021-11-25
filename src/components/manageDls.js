@@ -7,34 +7,46 @@ import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import { getManageDlList } from "../action/actionHome";
 import { connect } from "react-redux";
+import Loader from "react-loader-spinner";
 ////////////////////////////////////////////
 
-function ManageDls({ loadManageDLs, state }) {
+function Managedls({ loadManageDLs, state }) {
   const [open, setOpen] = useState(false);
 
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
-
+  const [visibility, setVisibility] = useState(false);
   useEffect(() => {
     loadgrid();
   }, []);
   const loadgrid = () => {
+    setVisibility(true);
     loadManageDLs({
-      user_id: localStorage.getItem("userID"),
-      search_term: "",
-      page_number: 1,
+      empid: localStorage.getItem("userID"),
+      searchadgroup: "voicesnap",
     })
       .then((res) => {
-        console.log(res);
+        setVisibility(false);
       })
       .catch((errmsg) => {
         console.log(errmsg);
+        setVisibility(false);
       });
   };
+
   return (
     <div>
       <Header />
       <Sidebar />
+      <div className="loaderdiv">
+        <Loader
+          type="Rings"
+          color="rgb(232, 135, 59)"
+          height={100}
+          width={100}
+          visible={visibility}
+        />
+      </div>
       <div className="manageDls" id="content">
         <div className="manageDls-tittle-component">
           <h4 className="manageDls-tittle">Manage DLs</h4>
@@ -60,7 +72,7 @@ function ManageDls({ loadManageDLs, state }) {
         </div>
         <div className="table-responsive" style={{ width: "99%" }}>
           <table className="table" cellSpacing="0">
-            <thead id="table-header">
+            <thead id="table-header" className="table-head">
               <tr className="rowstyle">
                 <th className="gridheader">Group name</th>
                 <th className="gridheader">
@@ -70,20 +82,15 @@ function ManageDls({ loadManageDLs, state }) {
               </tr>
             </thead>
             <tbody>
-              <tr className="rowstyle">
-                <td className="gridrow">Group 1</td>
-                <td className="gridrow">July 1,2020</td>
-                <td className="gridrow text-center">
-                  <BsXCircle size="1.25rem" color="red" />
-                </td>
-              </tr>
-              <tr className="rowstyle">
-                <td className="gridrow">Group 2</td>
-                <td className="gridrow">September 1,2020</td>
-                <td className="gridrow text-center">
-                  <BsXCircle size="1.25rem" color="red" />
-                </td>
-              </tr>
+              {state.common.managedlinfo.data.resultset.map((info) => (
+                <tr className="rowstyle" key={info.groupNameId}>
+                  <td className="gridrow">{info.groupName}</td>
+                  <td className="gridrow">{info.CreatedDay}</td>
+                  <td className="gridrow text-center">
+                    <BsXCircle size="1.25rem" color="red" />
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
@@ -213,4 +220,4 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   loadManageDLs: (data) => dispatch(getManageDlList(data)),
 });
-export default connect(mapStateToProps, mapDispatchToProps)(ManageDls);
+export default connect(mapStateToProps, mapDispatchToProps)(Managedls);

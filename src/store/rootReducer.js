@@ -8,7 +8,7 @@ import commonReducer from "../reducers/commonreducer";
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["userInfo", "favcontactInfo","contacts"],
+  whitelist: ["userInfo", "favcontactInfo", "contacts"],
 };
 
 const rootReducer = combineReducers({

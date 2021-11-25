@@ -4,7 +4,7 @@ var commondefault = {
   currentuniqueid: "",
   upcomingcalls: { data: { resultset: [], nextpage: 0 } },
   recentcalls: { data: { resultset: [], nextpage: 0 } },
-  manageDlInfo: { data: { resultset: [], nextpage: 0 } },
+  managedlinfo: { data: { resultset: [], totalrows: 0 } },
   search: "",
   pagecount: 1,
 };
@@ -24,7 +24,7 @@ const commonReducer = (state = commondefault, action) => {
     case "manageDlList":
       return {
         ...state,
-        manageDlInfo: action.payload,
+        managedlinfo: action.payload,
       };
     default:
       return state;
